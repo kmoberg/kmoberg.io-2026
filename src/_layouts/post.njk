@@ -2,18 +2,19 @@
 layout: base.njk
 ---
 <article class="post">
+  {% if image %}
+  <figure class="post-hero">
+    <img src="{{ image }}" alt="">
+  </figure>
+  {% endif %}
   <header class="post-header">
     <div class="post-meta">
       <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
       {% if tags %}{% for tag in tags %}{% if tag != 'posts' %}<span class="tag">{{ tag | upper }}</span>{% endif %}{% endfor %}{% endif %}
     </div>
     <h1>{{ title }}</h1>
+    {% if description %}<p class="post-subtitle">{{ description }}</p>{% endif %}
   </header>
-  {% if image %}
-  <figure class="post-hero">
-    <img src="{{ image }}" alt="">
-  </figure>
-  {% endif %}
   <div class="post-body">
     {{ content | safe }}
   </div>

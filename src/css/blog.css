@@ -154,7 +154,7 @@ main {
 }
 
 .post-hero {
-  margin: 40px 0 0 0;
+  margin: 48px 0 0 0;
 }
 
 .post-hero img {
@@ -162,6 +162,18 @@ main {
   max-height: 440px;
   object-fit: cover;
   border: 1px solid var(--line);
+}
+
+.post-hero + .post-header { padding-top: 44px; }
+
+.post-subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: var(--measure);
+  margin: 16px 0 0 0;
 }
 
 .post-body {
