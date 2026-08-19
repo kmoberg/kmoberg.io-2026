@@ -3,6 +3,7 @@ title: "Storage for Photographers"
 date: 2025-06-17
 tags: ["posts","Photography","IT","Storage"]
 permalink: /storage-for-photographers/
+image: "/images/ghost/unsplash/storage-for-photographers.jpg"
 ---
 <p>Let's be honest - storing photos has become a chore. Our cameras has larger file sizes for images, we take more images, and the idea of losing everything, sucks.</p><p>This is why you need a backup strategy - and you need to stick to it, and maintain it. Trust me - I know. Over my 20 years as a digital photographer, I've lost both the originals and high-res versions of some of my favorite images, including multiple once-in-a-lifetime situation photos that I'll never be able to get back, so I've sworn never to let that happen again, and to help others with the same.</p><div class="kg-card kg-header-card kg-v2 kg-width-full kg-content-wide " style="background-color: #000000;" data-background-color="#000000">
             

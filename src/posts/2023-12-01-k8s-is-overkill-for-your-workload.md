@@ -4,6 +4,7 @@ date: 2023-12-01
 tags: ["posts","AWS","Kubernetes","ECS","Containers"]
 description: "Why Kubernetes is probably not the right tool for your applications"
 permalink: /k8s-is-overkill-for-your-workload/
+image: "/images/ghost/2025/08/header.png"
 ---
 <p>I hate to be the bearer of bad news, but since you’re reading this, I guess that, most likely, you’re running Kubernetes in production. Sorry to break it to you: chances are - you’re using the wrong tool for the job.</p>
 <p>In the IT industry, few other products in recent years have become so well known or become such an industry buzzword as Kubernetes. In a relatively short time, Kubernetes has become how organizations, from small startups to internet-sized enterprises, run their container workloads to organize, connect, and scale applications on demand.</p>

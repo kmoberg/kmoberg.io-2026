@@ -9,6 +9,11 @@ layout: base.njk
     </div>
     <h1>{{ title }}</h1>
   </header>
+  {% if image %}
+  <figure class="post-hero">
+    <img src="{{ image }}" alt="">
+  </figure>
+  {% endif %}
   <div class="post-body">
     {{ content | safe }}
   </div>

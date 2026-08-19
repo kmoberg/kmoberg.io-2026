@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#101012">
   <meta property="og:title" content="{{ title or 'kmoberg.io' }}">
   <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+  {% if image %}<meta property="og:image" content="{% if '://' in image %}{{ image }}{% else %}https://kmoberg.io{{ image }}{% endif %}">{% endif %}
   <link rel="alternate" type="application/atom+xml" title="kmoberg.io" href="/feed.xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

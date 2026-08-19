@@ -3,6 +3,7 @@ title: "How you can try out new technology in the cloud - for FREE!"
 date: 2021-09-06
 tags: ["posts","IT","AWS","Homelab","Programming","Lab"]
 permalink: /how-you-can-try-out-new-technology-in-the-cloud-for-free/
+image: "/images/ghost/2025/08/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ylhvtqcb1q8vx8j7uwk3.webp"
 ---
 <h2 id="background">Background</h2>
 <p>In IT, we do a lot of “lab” work. Trying new things, testing out a theory or an application that you have developed, or simply learning a new technology, such as Linux or Windows server.</p>

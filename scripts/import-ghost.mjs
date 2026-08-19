@@ -76,10 +76,16 @@ for (const post of published) {
     .map((id) => tagsById.get(id))
     .filter(Boolean);
 
+  let featureImage = post.feature_image ?? "";
+  featureImage = featureImage
+    .replace("__GHOST_URL__/content/images/", "/images/ghost/")
+    .replace(/^\/content\/images\//, "/images/ghost/");
+
   const fm = [
     "---",
     `title: ${JSON.stringify(post.title)}`,
     `date: ${date}`,
+    ...(featureImage ? [`image: ${JSON.stringify(featureImage)}`] : []),
     ...(tagNames.length ? [`tags: ${JSON.stringify(["posts", ...tagNames])}`] : []),
     ...(post.custom_excerpt ? [`description: ${JSON.stringify(post.custom_excerpt)}`] : []),
     `permalink: /${slug}/`,

@@ -4,6 +4,7 @@ date: 2022-05-15
 tags: ["posts","AWS","Cloud","Containers"]
 description: "AWS has over 180 different services with a myriad of different names and it can be incredibly hard to figure out where you should run your applications. "
 permalink: /aws-can-be-confusing-where-should-i-run-my-crap/
+image: "/images/ghost/2025/08/tdtz7aqgicf0hg8zocbq.png"
 ---
 <p>AWS has over 180 different services with a myriad of different names and it can be incredibly hard to figure out where you should run your applications. In this post, my goal is to make it a bit easier for you to get started with AWS, and know what services you should consider researching moving forward.</p><h2 id="basic-services">Basic Services</h2>
 <p>We'll start with a quick introduction of some of AWS most popular and well known services, just to get a brief understanding on what services we are going to be talking about later:</p>
