@@ -1,3 +1,7 @@
 node_modules/
 _site/
 .DS_Store
+
+# local only — unpublished writing and raw Ghost migration data
+drafts/
+migration/
