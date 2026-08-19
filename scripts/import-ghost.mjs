@@ -70,7 +70,10 @@ for (const post of published) {
   html = html
     .replaceAll("__GHOST_URL__/content/images/", "/images/ghost/")
     .replaceAll("/content/images/", "/images/ghost/")
-    .replaceAll("__GHOST_URL__/", "/");
+    .replaceAll("__GHOST_URL__/", "/")
+    .replace(/\s+srcset="[^"]*"/g, "")
+    .replace(/\s+sizes="[^"]*"/g, "")
+    .replace(/\/images\/ghost\/size\/w\d+\//g, "/images/ghost/");
 
   const tagNames = (tagIdsByPost.get(post.id) ?? [])
     .map((id) => tagsById.get(id))

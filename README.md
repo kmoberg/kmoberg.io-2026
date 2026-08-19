@@ -44,7 +44,7 @@ Static site component:
 
 - Build command: `npm ci && npm run build`
 - Output directory: `_site`
-- Catchall document: `404.html`
+- Error document: `404.html` (real 404 status — not a catchall, which would soft-404 missing assets as 200s)
 - Custom domain: `kmoberg.io` (apex). `blog.kmoberg.io` redirects here via a
   Cloudflare redirect rule.
 
