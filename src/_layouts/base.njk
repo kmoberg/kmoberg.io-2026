@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} — kmoberg.io{% else %}kmoberg.io — Karl Mathias Moberg{% endif %}</title>
+  <meta name="description" content="{{ description or 'Notes on software, cloud, DevOps and the occasional homelab adventure — by Karl Mathias Moberg, Stavanger, Norway.' }}">
+  <meta name="theme-color" content="#101012">
+  <meta property="og:title" content="{{ title or 'kmoberg.io' }}">
+  <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+  <link rel="alternate" type="application/atom+xml" title="kmoberg.io" href="/feed.xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!--
+    Cloudflare Web Analytics — enable in the Cloudflare dashboard
+    (Analytics & Logs → Web Analytics → Add a site → kmoberg.io),
+    then paste the beacon snippet it gives you here:
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script>
+  -->
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="/">kmoberg<span class="accent">.io</span></a>
+    <nav>
+      <a href="/">POSTS</a>
+      <a href="/feed.xml">RSS</a>
+      <a href="https://kmoberg.no">KMOBERG.NO</a>
+      <a href="https://studiomoberg.no">STUDIO MOBERG</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2026 KARL MATHIAS MOBERG</div>
+    <div><a href="https://kmoberg.no">KMOBERG.NO</a></div>
+    <div>STAVANGER, NO</div>
+  </footer>
+</body>
+</html>

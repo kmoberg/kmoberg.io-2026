@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+<section class="blog-hero">
+  <p class="eyebrow">NOTES FROM THE OTHER HALF</p>
+  <h1>Software, cloud &amp; the occasional homelab adventure.</h1>
+  <p>Written by <a href="https://kmoberg.no">Karl Mathias Moberg</a> — photographer by passion, technologist by trade, in Stavanger, Norway.</p>
+</section>
+
+<section class="post-list">
+  {% for post in collections.posts %}
+  <a class="row" href="{{ post.url }}">
+    <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+    <span class="post-title">{{ post.data.title }}</span>
+  </a>
+  {% endfor %}
+</section>

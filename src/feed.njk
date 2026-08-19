@@ -1,0 +1,24 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>kmoberg.io</title>
+  <subtitle>Software, cloud and the occasional homelab adventure.</subtitle>
+  <link href="https://kmoberg.io/feed.xml" rel="self"/>
+  <link href="https://kmoberg.io/"/>
+  <id>https://kmoberg.io/</id>
+  <author><name>Karl Mathias Moberg</name></author>
+  {% if collections.posts.length %}<updated>{{ collections.posts[0].date | isoDate }}</updated>{% endif %}
+  {% for post in collections.posts %}
+  <entry>
+    <title>{{ post.data.title | e }}</title>
+    <link href="https://kmoberg.io{{ post.url }}"/>
+    <id>https://kmoberg.io{{ post.url }}</id>
+    <published>{{ post.date | isoDate }}</published>
+    <updated>{{ post.date | isoDate }}</updated>
+    <content type="html">{{ post.templateContent | e }}</content>
+  </entry>
+  {% endfor %}
+</feed>
